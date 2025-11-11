@@ -1,0 +1,10 @@
+1. What are blob, tree, and commit object?
+	blob: 
+		A blob stores the content of a file, just the raw data, without any file name or folder structure. Every unique file content gets a unique blob ID.
+		It’s how Git keeps track of file versions.
+	tree:
+		A tree object represents a directory. It links file names to blob IDs and can also include other trees (subdirectories). 
+		It organizes blobs into a folder structure for each commit.
+	Commit: 
+		A commit object is a snapshot of your project. It points to a tree and includes metadata like author, date, and message. It also links to the previous commit,
+		 forming a history of changes.

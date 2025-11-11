@@ -1,0 +1,39 @@
+1. What happens inside Git when you run git add file.txt?
+	When i run Git add command the files will move to the Staging Area from working directories, which means it's marked to be included in the next commit.
+	Git starts tracking changes to that file from this point. But the file is not saved permanently until you commit.
+
+2. Why do we say a commit is a snapshot, not a diff?
+	A commit saves the full state of files at that moment. It is like taking a photo of your project. Git doesn’t just save the changes—it saves how everything looks. 
+	This makes it easy to go back to any version. This is different from other systems that store only the differences.
+
+3. What is stored inside the .git folder?
+	The .git folder contains all the data Git needs to manage the repository. This includes commits, branches, configuration settings, and the history of changes.
+	and  It also tracks the history of the files. Without this folder, Git won’t work.
+
+4. What does HEAD point to, and how is it updated?
+	HEAD points to the current branch and the latest commit on that branch. It tells Git where you are working. When you make a new commit or switch branches,
+	It helps Git keep track the position.
+
+5. What’s the difference between the Working Directory and the Staging Area?
+	The Working Directory is to edit files. The Staging Area is where you put files you want to commit. Changes in the working directory are not saved until they are staged and 	committed. Only staged files go into a commit.
+
+6. What happens if you change a file after staging it?
+	If change a file after staging it, Git will see it as modified again. again run git add to update the staged version with the latest changes.need to re-stage the file to include the 	new changes. Otherwise, the commit will have the old version.
+
+7. Why doesn’t Git store whole files for every commit?
+	Git saves space by storing only the changes. It stores snapshots efficiently by reusing unchanged parts and compressing data. This makes Git fast and lightweight even for large 	projects. It avoids saving the same data again and again.
+
+8. What is version control, and how does Git make it easier?
+	Version control helps to track changes in the code over time. Git makes it easy to save versions, go back to previous states, work with others,
+ 	and manage branches without losing work.
+
+9. What are tracked vs untracked files?
+	Tracked files are files Git is watching and managing. Untracked files are new or ignored files that Git doesn’t know about yet. Tracked or untracked files tracked by using git add. 	Tracked files are included in commits.
+
+
+
+
+
+
+
+
